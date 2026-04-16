@@ -1,0 +1,38 @@
+{% extends 'generic/object.html' %}
+{% load helpers %}
+
+{% block content %}
+  <div class="row">
+    <div class="col col-md-6">
+      <div class="card">
+        <h2 class="card-header">Fabric</h2>
+        <table class="table table-hover attr-table">
+          <tr>
+            <th scope="row">Name</th>
+            <td>{{ object.name }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Slug</th>
+            <td>{{ object.slug }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Fabric Number</th>
+            <td>{{ object.fabric_number }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Region</th>
+            <td><a href="{{ object.region.get_absolute_url }}">{{ object.region }}</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Description</th>
+            <td>{{ object.description|placeholder }}</td>
+          </tr>
+        </table>
+      </div>
+      {% include 'inc/panels/custom_fields.html' %}
+    </div>
+    <div class="col col-md-6">
+      {% include 'inc/panels/tags.html' %}
+    </div>
+  </div>
+{% endblock content %}
