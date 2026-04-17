@@ -27,3 +27,13 @@ The plugin enforces uniqueness of `name`, `slug`, and `fabric_number` within eac
 2. Add `netbox_fabric` to `PLUGINS` in `configuration.py`.
 3. Run `manage.py migrate`.
 4. Restart NetBox services.
+
+## Compatibility
+
+- NetBox `4.5.7`
+- Python `3.12+`
+
+## Security
+
+Please do not report security issues in public issues or pull requests. See
+[SECURITY.md](./.github/SECURITY.md) for the disclosure process.

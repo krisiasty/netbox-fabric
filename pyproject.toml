@@ -20,6 +20,11 @@ classifiers = [
     "Programming Language :: Python :: 3 :: Only",
 ]
 
+[project.urls]
+Homepage = "https://github.com/krisiasty/netbox-fabric"
+Repository = "https://github.com/krisiasty/netbox-fabric"
+Issues = "https://github.com/krisiasty/netbox-fabric/issues"
+
 [tool.setuptools]
 include-package-data = true
 
